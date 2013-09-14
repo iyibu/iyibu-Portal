@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-9"?>
+<blok>
+<baslik>Modül İçerik Detay Bilgiler</baslik>
+<aciklama>İçeriğin yazarı eklenme zamanı hiti gibi ek detaylarını içerir. Sol ve sağ bloklar için uygundur.</aciklama>
+<tip>salt</tip>
+<ozel>tema</ozel>
+<kod><![CDATA[
+<div class="blok">
+<div class="row-fluid"><div class="span12 blok-ust">
+İçerik Hakkında <img src="_resimler/minus.gif" class="pull-right ackapa kapali">
+</div></div><div class="row-fluid"><div class="span12 blok-orta">
+Yazan: #içerik[ekleyen]#
+<div itemscope itemtype="http://schema.org/Article">
+<div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+      <span itemprop="ratingValue">4</span> stars -
+      <span itemprop="reviewCount">#içerik[sayac]#</span> reviews
+    </div>
+</div>
+</div></div></div>
+]]></kod>
+</blok>

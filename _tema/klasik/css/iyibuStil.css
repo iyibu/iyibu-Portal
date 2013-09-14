@@ -1,0 +1,117 @@
+body {background: #F0F0F0; font-family: Arial; font-size: 10pt; word-spacing:0;}
+a:link	{text-decoration: none; color:#111111;}
+a:visited	{text-decoration: none; color:#111111;}
+a:active	{text-decoration: none; color:#555555;}
+a:hover		{text-decoration: none; color:#555555;}
+.ust{
+border-top-left-radius:6px;
+border-top-right-radius:6px;
+border:solid 1px #C5C5C5;
+background: url('../img/logoarka.jpg');
+box-shadow: 0 0px 8px #BDBDBD;
+height: 180px;
+position:relative;
+}
+.ustmenu	{
+background:#FAFAFA;
+background: linear-gradient(top, #FFFFFF 0%,#F9F9F9 100%); /* W3C */
+box-shadow: 0 0px 8px #BDBDBD;
+height: 35px;
+padding-top: 5px;
+position: relative;
+margin-bottom: 15px;
+}
+.uyegiris {padding: 7px 15px 0px 15px}
+#menu{padding:1px; padding-left:10px; padding-top:2px; line-height:30px;color:#888;width:100%;overflow:hidden;margin:0;}
+#menu li{list-style-type:none;padding-left:0;display:inline-block;float:left; margin-right:7px;}
+#menu a{display:inline-block;padding-right:5px;padding-left:5px}
+#menu img{margin-top:-3px;}
+.logo {
+width:167px; height: 79px; 
+background-position: 0px -1px; background-image:url('../../../_resimler/logo.png'); background-repeat:no-repeat; 
+vertical-align:top;
+position: absolute; left: 79px; top: 51px;
+}
+.ustpanel {position: absolute; right: 12px; top: 0px; height: 41px; width: 351px; 
+border-bottom-left-radius:10px;
+border-bottom-right-radius:10px;
+border-top: 0px;
+background: url('../img/uyepnl.png');
+padding-top: 10px;
+}
+
+.ustpanel .c3 {width:101px;height:32px; position: absolute; left: 50%; margin-left: 25px}
+.ustpanel .c2 {width:125px;height:32px; position: absolute; left: 50%; margin-left: -130px}
+.ust .c1 {width:167px;height:79px;}
+
+.blok {
+-moz-border-radius: 6px;
+-webkit-border-radius: 6px;
+border-radius: 6px;
+border: solid 1px #C5C5C5;
+padding-bottom: 26px;
+background: #FFFFFF;
+-webkit-box-shadow: 0 0px 8px #BDBDBD;
+-moz-box-shadow: 0 0px 8px #BDBDBD;
+box-shadow: 0 0px 8px #BDBDBD;
+margin-bottom: 12px;
+word-wrap:break-word;
+}
+
+.blok-orta {
+padding:10px;
+word-wrap:break-word;
+}
+
+.blok-ust{
+padding: 10px 0px 0px 15px;
+border-bottom: 1px solid #C0C0C0;
+background: #FAFAFA;
+background: -moz-linear-gradient(top, #FFFFFF 0%, #F9F9F9 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#F9F9F9));
+background: -webkit-linear-gradient(top, #FFFFFF 0%,#F9F9F9 100%);
+background: -o-linear-gradient(top, #FFFFFF 0%,#F9F9F9 100%);
+background: -ms-linear-gradient(top, #FFFFFF 0%,#F9F9F9 100%);
+background: linear-gradient(top, #FFFFFF 0%,#F9F9F9 100%);
+border-top-left-radius: 6px;
+border-top-right-radius: 6px;
+height:40px;
+}
+
+.son-eklenenler{
+list-style: none;
+margin-left:0px;
+border-top:1px dashed #C0C0C0;
+}
+.son-eklenenler li{
+list-style: none;
+padding-bottom:10px;
+padding-top:10px;
+margin-left:0px;
+border-bottom:1px dashed #C0C0C0;
+}
+
+.ackapa{
+margin-right:10px;
+margin-top:3px;
+}
+#iskelet {float:left; width:100%;}
+#orta {padding-left:210px;padding-right:210px;}
+#orta-sag {padding-right:210px;}
+#orta-sol {padding-left:210px;}
+#sol {float:left; margin-left:-100%;width:200px;}
+#sag {float:left; margin-left:-200px;width:200px;}
+#neredeyim{list-style:none;margin:0px;margin-bottom:15px; padding:12px; padding-bottom:0px;
+background: #FAFAFA;
+background: -moz-linear-gradient(top, #FFFFFF 0%, #F9F9F9 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#F9F9F9));
+background: -webkit-linear-gradient(top, #FFFFFF 0%,#F9F9F9 100%);
+background: -o-linear-gradient(top, #FFFFFF 0%,#F9F9F9 100%);
+background: -ms-linear-gradient(top, #FFFFFF 0%,#F9F9F9 100%);
+background: linear-gradient(top, #FFFFFF 0%,#F9F9F9 100%);}
+#neredeyim .divider{margin-right:5px;}
+.copy {padding:25px; margin-top:15px; padding-left:15px; clear:both}
+@font-face{font-family:'tinymce';src:url('fonts/icomoon.eot');src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),url('fonts/icomoon.svg#icomoon') format('svg'),url('fonts/icomoon.woff') format('woff'),url('fonts/icomoon.ttf') format('truetype');font-weight:normal;font-style:normal}@font-face{font-family:'tinymce-small';src:url('fonts/icomoon-small.eot');src:url('fonts/icomoon-small.eot?#iefix') format('embedded-opentype'),url('fonts/icomoon-small.svg#icomoon') format('svg'),url('fonts/icomoon-small.woff') format('woff'),url('fonts/icomoon-small.ttf') format('truetype');font-weight:normal;font-style:normal}
+
+.carousel-indicators li{background: none repeat scroll 0 0 rgba(0, 0, 0, 0.75)!important;}
+.carousel-indicators li.active{background: none repeat scroll 0 0 rgba(0, 0, 0, 0.15)!important;}

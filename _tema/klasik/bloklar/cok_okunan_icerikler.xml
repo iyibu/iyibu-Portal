@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-9"?>
+<blok>
+<baslik>Çok Okunan İçerikler</baslik>
+<aciklama>Çok Okunan İçerikleri Görüntüler</aciklama>
+<tip>salt</tip>
+<ozel>tema</ozel>
+<kod><![CDATA[
+<div class="blok">
+<div class="row-fluid"><div class="span12 blok-ust">
+==blok[baslik]== <img src="_resimler/minus.gif" class="pull-right ackapa kapali">
+</div></div><div class="row-fluid"><div class="span12 blok-orta">
+<img src="==blok[resim]==" class="clearfix" style="display: block;margin-left: auto; margin-right: auto;"><br>
+#dizi hit_içerikler/ID\ = [hit_içerikler('==blok[modul]==',false,'10')]#
+{if #hit_içerikler/ID\[toplam_kayit]# == 0}
+Hiç içerik bulunamadı
+<br><br>
+{/if}
+<ul class="son-eklenenler">
+{for $i=0 to #hit_içerikler/ID\[toplam_kayit]#-1}
+<li><a href="#site[adres]#/==blok[modul]==/#hit_içerikler/ID\[#i#][seo]#.html">
+<i class="icon-fire"></i> #hit_içerikler/ID\[#i#][baslik]#</a></li>
+{/for}
+</ul>
+</div></div></div>
+]]></kod>
+<ek_deger>
+modul->Alınacak Modül->modul|baslik->Bloğun Başlığı->input|resim->Blok Resmi->input
+</ek_deger>
+</blok>

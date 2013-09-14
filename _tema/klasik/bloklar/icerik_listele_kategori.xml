@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-9"?>
+<blok>
+<baslik>Kategori İçerik Listeleme</baslik>
+<aciklama>Modül kategori sayfasında sayfalama sistemeni göre tüm içerikleri listeler</aciklama>
+<tip>salt</tip>
+<ozel>tema</ozel>
+<kod><![CDATA[
+#dizi kategori_listele/ID\ = [son_içerikler(false,'#kategori[seo]#')]#
+{if #kategori_listele/ID\[toplam_kayit]# == 0}
+<h2>Bu Kategoriye Hiç İçerik Eklenmemiş</h2>
+{/if}
+{for $i=0 to #kategori_listele/ID\[toplam_kayit]#-1}
+<div class="blok">
+<div class="row-fluid"><div class="span12 blok-ust">
+<a href="#site[adres]#/#modul[seo]#/#kategori_listele/ID\[#i#][seo]#.html">#kategori_listele/ID\[#i#][baslik]#</a>
+<img src="_resimler/minus.gif" class="pull-right ackapa kapali">
+</div></div><div class="row-fluid"><div class="span12 blok-orta">
+<a href="#site[adres]#/#modul[seo]#/#kategori_listele/ID\[#i#][seo]#.html">
+<img src="#kategori_listele/ID\[#i#][resim]#" style="width:210px;height:150px;margin-right:10px;" class="pull-left img-polaroid"></a>
+#kategori_listele/ID\[#i#][icerik]#<hr>
+<a href="#site[adres]#/#modul[seo]#/#kategori_listele/ID\[#i#][kategori]#/"><span class="label label-warning">#kategori_listele/ID\[#i#][kategori_isim]# (#kategori_listele/ID\[#i#][kategori_kayitlar]#)</span> </a>
+<span class="label label-info tip" title="#kategori_listele/ID\[#i#][tarih]#">#kategori_listele/ID\[#i#][k_tarih]# önce</span> 
+<span class="label label-info">Ekleyen: #kategori_listele/ID\[#i#][ekleyen]#</span> 
+ Okunma: <span class="badge badge-info">#kategori_listele/ID\[#i#][sayac]#</span> 
+<a href="#site[adres]#/#modul[seo]#/#kategori_listele/ID\[#i#][seo]#.html" class="btn btn-success pull-right" style="color:#fff"><i class="icon-search icon-white"></i> İçeriği Görüntüle</b></a>
+</div></div></div>
+{/for}
+
+]]></kod>
+</blok>

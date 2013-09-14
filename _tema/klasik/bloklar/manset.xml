@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-9"?>
+<blok>
+<baslik>Manşet!</baslik>
+<aciklama>Manşet</aciklama>
+<tip>salt</tip>
+<ozel>tema</ozel>
+<kod><![CDATA[<div class="blok">
+<div class="row-fluid">
+<div class="span12 blok-ust">
+==blok[baslik]==<img class="pull-right ackapa kapali" src="_resimler/minus.gif">
+</div>
+</div>
+#dizi son_içerikler/ID\ = [son_içerikler('==blok[modul]==',false,'6',130)]#
+<div class="row-fluid">
+<div class="span12 blok-orta">
+<div id="myCarousel" class="carousel slide"><ol class="carousel-indicators">
+{for $i=0 to #son_içerikler/ID\[toplam_kayit]#-1}
+<li data-target="#myCarousel" data-slide-to="#i#">&nbsp;</li>
+{/for}
+</ol>
+<div class="carousel-inner">
+{for $i=0 to #son_içerikler/ID\[toplam_kayit]#-1}
+<div class="item"><img src="#son_içerikler/ID\[#i#][resim]#" style="height:259px;" onerror="$(this).attr('src','_resimler/noimage.png')">
+<div class="carousel-caption">
+<h4>#son_içerikler/ID\[#i#][baslik]#</h4>
+<p>[kısaDetay('#son_içerikler/ID\['.$i.'][icerik]#',100)]
+<a href="#site[adres]#/==blok[modul]==/#son_içerikler/ID\[#i#][seo]#.html" class="btn btn-success btn-mini pull-right" style="color:#FFF">Devamını oku</a>
+</p>
+</div>
+</div>
+{/for}
+</div>
+<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a> <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a></div>
+</div>
+</div>
+</div>]]></kod>
+<ek_deger>
+modul->Alınacak Modül->modul|baslik->Bloğun Başlığı->input
+</ek_deger>
+</blok>

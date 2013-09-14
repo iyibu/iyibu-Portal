@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-9"?>
+<blok>
+<baslik>İçerik Yorumları</baslik>
+<aciklama>İçerik Hakkında Yapılan Yorumları Listeler</aciklama>
+<tip>salt</tip>
+<ozel>tema</ozel>
+<kod><![CDATA[
+<div class="blok">
+<div class="row-fluid"><div class="span12 blok-ust">
+Yorumlar 
+<img src="_resimler/minus.gif" class="pull-right ackapa kapali">
+<a class="btn btn-success btn-mini pull-right" style="margin-right:5px" onclick="yorumYaz('#modul[seo]#','#içerik[seo]#');">Sen de Yorum YAZ</a>
+</div></div><div class="row-fluid"><div class="span12 blok-orta">
+{if #yorumlar[toplam]# == 0}
+<h4 class="pull-left">Bu içeriğe hiç yorum yapılmamış</h4>
+<a class="btn btn-large btn-primary pull-right" onclick="yorumYaz('#modul[seo]#','#içerik[seo]#');">İlk Yorum Yapan Sen Ol!</a>
+{else}
+<h3>İçeriğe Yapılan Yorumlar</h3>
+<hr>
+{/if}
+{for $i=0 to #yorumlar[toplam]#-1}
+<div class="clearfix">
+<div class="clearfix">
+<img src="http://www.gravatar.com/avatar/#yorumlar[#i#][md5Email]#.png" class="pull-left img-polaroid tip" title="#yorumlar[#i#][ekleyen]# tarafından gönderilmiş" style="margin-right:15px;">
+#yorumlar[#i#][yorum]#
+</div>
+<span class="label label-info tip" title="#yorumlar[#i#][tarih]#" style="margin-top:15px;">#yorumlar[#i#][k_tarih]# Önce</span>  
+<span class="label label-info">#yorumlar[#i#][ekleyen]#</span>
+<a onclick="yorumYaz('#modul[seo]#','#içerik[seo]#','#yorumlar[#i#][id]#');" class="btn btn-mini pull-right" style="margin-top:10px;display:none">Cevapla</a>
+</div>
+<hr><hr>
+{/for}
+</div></div></div>
+]]></kod>
+</blok>

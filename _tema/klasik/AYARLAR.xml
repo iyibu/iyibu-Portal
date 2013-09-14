@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="ISO-8859-9"?>
+<ayarlar>
+<blok_sistemi>true</blok_sistemi>
+<blok_tipleri>
+<tip>
+<degisken>cerceve</degisken>
+<aciklama>Çerçeveli Blok</aciklama>
+</tip>
+<tip>
+<degisken>salt</degisken>
+<aciklama>Çerçevesiz/Salt Blok</aciklama>
+</tip>
+</blok_tipleri>
+<modul_tipleri>
+
+<ana>
+<tip>
+<degisken>dokuman</degisken>
+<aciklama>Döküman Görünümü</aciklama>
+</tip>
+</ana>
+
+<oku>
+<tip>
+<degisken>dokuman</degisken>
+<aciklama>Döküman Okuma Sayfası</aciklama>
+</tip>
+</oku>
+
+<kategori>
+<tip>
+<degisken>dokuman</degisken>
+<aciklama>Döküman Kategori</aciklama>
+</tip>
+</kategori>
+
+</modul_tipleri>
+<gorunum_tipleri>
+<cift_blok>
+<gorunum>clearfix;
+sütun span12;Üst (Header)/div;/div;
+clearfix;
+sütun span4;Listele(sol-blok);/div;
+sütun span4;Listele(orta-blok1);/div;
+sütun span4;Listele(sag-blok);/div;/div;
+clearfix;
+sütun span12;Alt (Footer)/div;/div;</gorunum>
+<aciklama>Çift Blok</aciklama>
+</cift_blok>
+<sag_blok>
+<gorunum>clearfix;
+sütun span12;Üst (Header)/div;/div;
+clearfix;
+sütun span8;Listele(orta-blok1);/div;
+sütun span4;Listele(sag-blok);/div;/div;
+clearfix;
+sütun span12;Alt (Footer)/div;/div;</gorunum>
+<aciklama>Tek Blok (Sağ)</aciklama>
+</sag_blok>
+<sol_blok>
+<gorunum>clearfix;
+sütun span12;Üst (Header)/div;/div;
+clearfix;
+sütun span4;Listele(sol-blok);/div;
+sütun span8;Listele(orta-blok1);/div;
+clearfix;
+sütun span12;Alt (Footer)/div;/div;</gorunum>
+<aciklama>Tek Blok (Sol)</aciklama>
+</sol_blok>
+<bloksuz>
+<gorunum>clearfix;
+sütun span12;Üst (Header)/div;/div;
+clearfix;
+sütun span12;Listele(orta-blok1);/div;
+clearfix;
+sütun span12;Alt (Footer)/div;/div;</gorunum>
+<aciklama>Bloksuz</aciklama>
+</bloksuz>
+</gorunum_tipleri>
+<ek_deger>
+ekjs->Ek Javascript->Sitede bulunmasını istediğiniz ek javascriptler->textarea|ga->Google Analytics->Google Analytics Account (UA-xxxxxxx)->input
+</ek_deger>
+</ayarlar>
+

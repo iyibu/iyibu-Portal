@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-9"?>
+<blok>
+<baslik>Modül Sayfalama Sistemi</baslik>
+<aciklama>Modül Anasayfası Sayfalama bloğu</aciklama>
+<tip>salt</tip>
+<ozel>tema</ozel>
+<kod><![CDATA[
+<div id="modulSayfa" gecerli="#modul[sayfa]#" toplam="#modul[toplam_sayfa]#" sayfa="#modul[seo]#/"></div>
+<div class="modulSayfa">Sayfalar:<br>{for $i=1 to #modul[sayfa]#}
+<a href="#modul[seo]#/#i#/">Sayfa: #i#</a><br>
+{/for}</div>
+]]></kod>
+</blok>

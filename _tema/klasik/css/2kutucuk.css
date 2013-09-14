@@ -1,0 +1,82 @@
+
+
+#iyibuKutu-overlay {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #333;
+    height: 100%;
+    width: 100%;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    z-index: 9000;
+}
+
+#iyibuKutu-wrapper
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-family: Helvetica, Ubuntu, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 19px;
+    color: #555;
+    text-shadow: 1px 1px 1px #fff;
+    -webkit-font-smoothing: antialiased;
+    z-index: 9000;
+    -moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+    position: fixed;
+    overflow: hidden;
+    background-color: #ececec;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
+    background-image: -moz-linear-gradient(#f4f4f4, #ececec);
+    background-image: -o-linear-gradient(#f4f4f4, #ececec);
+    background-image: linear-gradient(#f4f4f4, #ececec);
+    -webkit-background-clip: padding;
+    -moz-background-clip: padding;
+    -o-background-clip: padding-box; 
+    border: 1px solid #fff;
+    box-shadow: 0 0 5px #111;
+    -moz-box-shadow: 0 0 5px #111;
+    -webkit-box-shadow: 0 0 5px #111;
+    z-index: 9000;
+}
+
+#iyibuKutu-icon {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    height: 64px;
+    width: 64px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    z-index: 9000;
+}
+
+#iyibuKutu {
+    position: relative;
+    z-index: 9000;
+    padding: 30px 20px 20px 50px;
+}
+
+#iyibuKutu h1,h2,h3,h4{
+font-weight: normal;
+}
+
+/* custom icons */
+
+.icon-hakkinda{
+    background: url('../_resimler/cup32.png');
+}
+
+.icon-user{
+    background: url('../_tema/klasik/img/user.png');
+}
+
+.icon-bos{background:none}

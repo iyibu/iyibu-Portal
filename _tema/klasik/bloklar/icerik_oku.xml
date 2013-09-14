@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-9"?>
+<blok>
+<baslik>Modül İçerik Oku</baslik>
+<aciklama>Modülün içerik okuma sayfasındaki içeriği görüntüleyen bloktur.</aciklama>
+<tip>salt</tip>
+<ozel>tema</ozel>
+<kod><![CDATA[
+<div class="blok">
+<div class="row-fluid"><div class="span12 blok-ust">
+#içerik[baslik]# <img src="_resimler/minus.gif" class="pull-right ackapa kapali"> 
+<div class="yazi-boyut pull-right" style="margin-right:5px;">
+<button type="button" class="btn btn-mini yazi-buyut" style="margin-right:5px;" title="Yazı boyutunu büyült">A<sup>+</sup></button>
+<button type="button" class="btn btn-mini normal-yazi" style="margin-right:5px;" title="Normal Yazı Boyutu">A</button>
+<button type="button" class="btn btn-mini yazi-kucut" title="Yazı boyutunu küçült">A<sup>-</sup></button>
+</div>
+</div></div><div class="row-fluid"><div class="span12 blok-orta">
+<a href="#içerik[resim]#"><img src="#içerik[resim]#" style="display: block;margin-left: auto; margin-right: auto; max-width:400px;"></a><br>
+<span class="tip pull-right" title="#içerik[tarih]#">[nezaman("#içerik[tarih]#")] önce eklendi</span>
+<h1>#içerik[baslik]# </h1>
+<hr>
+#içerik[icerik]#
+</div></div></div>
+]]></kod>
+</blok>

@@ -1,0 +1,21 @@
+php_value session.gc_maxlifetime 1
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index.html$ /index.php
+RewriteRule ^iyibu.js$ /_inc/tumjs.php [L]
+RewriteRule ^iyibu.css$ /_inc/tumcss.php [L]
+RewriteRule ^((.*?).(jpg|png))$ /_inc/resim.php?dosya=../$1 [L]
+RewriteRule ^((.*?).(js))$ /_inc/javascript.php?dosya=../$1 [L]
+RewriteRule ^((.*?).(css))$ /_inc/stylesheet.php?dosya=../$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*?)\/(.*?).html$ /modul.php?modul=$1&oku=$2 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*?)\/(.*?)\/$ /modul.php?modul=$1&kategori=$2 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*?).html$ /modul.php?modul=$1 [L]
